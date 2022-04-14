@@ -6,9 +6,9 @@
 
 In the client directory, you can run:
 
-### `npm init`
+### `npm install`
 
-Initialise the node modules
+Install the node modules
 
 ### `npm run dev`
 
