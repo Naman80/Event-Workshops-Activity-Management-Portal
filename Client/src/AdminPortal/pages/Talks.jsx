@@ -28,7 +28,7 @@ function Talks() {
                 <div className="flex flex-wrap -m-4">
                     {
                         arr.map(data => {
-                            return <Card to={`/admin/talks/report/:${data.id}`} title={data.name} />
+                            return <Card to={`/admin/talks/report/:${data.id}/:talks`} title={data.name} />
                         })
                     }
                 </div>

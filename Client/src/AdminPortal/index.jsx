@@ -38,18 +38,18 @@ export default [
         <Route path="webinar" element={<Webinar />} />
         <Route path="workshops" element={<Workshops />} />
         <Route path="logout" element={<LogOut />} />
-        <Route path="workshop/report/:eventId" element={<Report />} />
-        <Route path="workshop/status/:eventId" element={<Status />} />
-        <Route path="workshop/applications/:eventId" element={<Applications />} />
-        <Route path="webinar/report/:eventId" element={<WeReport />} />
-        <Route path="webinar/status/:eventId" element={<WeStatus />} />
-        <Route path="webinar/applications/:eventId" element={<WeApplications />} />
-        <Route path="talks/report/:eventId" element={<TReport />} />
-        <Route path="talks/status/:eventId" element={<TStatus />} />
-        <Route path="talks/applications/:eventId" element={<TApplications />} />
-        <Route path="fdp/report/:eventId" element={<FReport />} />
-        <Route path="fdp/status/:eventId" element={<FStatus />} />
-        <Route path="fdp/applications/:eventId" element={<FApplications />} />
+        <Route path="workshop/report/:eventId/:type" element={<Report />} />
+        <Route path="workshop/status/:eventId/:type" element={<Status />} />
+        <Route path="workshop/applications/:eventId/:type" element={<Applications />} />
+        <Route path="webinar/report/:eventId/:type" element={<WeReport />} />
+        <Route path="webinar/status/:eventId/:type" element={<WeStatus />} />
+        <Route path="webinar/applications/:eventId/:type" element={<WeApplications />} />
+        <Route path="talks/report/:eventId/:type" element={<TReport />} />
+        <Route path="talks/status/:eventId/:type" element={<TStatus />} />
+        <Route path="talks/applications/:eventId/:type" element={<TApplications />} />
+        <Route path="fdp/report/:eventId/:type" element={<FReport />} />
+        <Route path="fdp/status/:eventId/:type" element={<FStatus />} />
+        <Route path="fdp/applications/:eventId/:type" element={<FApplications />} />
         <Route path="create/webinar" element={<WebinarEvent />} />
         <Route path="create/fdp" element={<FDPEvent />} />
         <Route path="create/workshop" element={<WorkshopEvent />} />

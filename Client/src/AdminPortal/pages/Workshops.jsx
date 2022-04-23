@@ -28,7 +28,7 @@ function Workshops() {
                 <div className="flex flex-wrap -m-4">
                     {
                         arr.map(data => {
-                            return <Card to={`/admin/workshop/report/:${data.id}`} title={data.name} />
+                            return <Card to={`/admin/workshop/report/:${data.id}/:workshop`} title={data.name} />
                         })
                     }
                 </div>

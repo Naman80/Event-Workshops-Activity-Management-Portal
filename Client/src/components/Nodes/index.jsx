@@ -26,19 +26,44 @@ const boxStyle = {
 const Box = (props) => {
     const updateXarrow = useXarrow();
     return (
-        <div ref={props.box.ref} id={props.box.id} className={props.box.background} onScroll={updateXarrow} style={boxStyle}>
-            {props.box.id}
+        <div ref={props.box.ref} id={props.box.id} className={`${props.box.background} flex flex-col justify-center items-center`} onScroll={updateXarrow} style={boxStyle}>
+            <div className=" text-m underline font-bold uppercase leading-8 text-orange-500">
+                {props.box.id}
+            </div>
+            <div className="text-m font-bold uppercase leading-8 text-gray-500">
+                {props.box.status}
+            </div>
         </div>
     );
 };
 
-function index() {
+function index({ data }) {
     const updateXarrow = useXarrow();
-    const box1 = { id: 'venue', ref: useRef(null), background: 'success' };
-    const box2 = { id: 'logistics', ref: useRef(null), background: 'success' };
-    const box3 = { id: 'inform', ref: useRef(null), background: 'in-progress' };
-    const box5 = { id: 'canteen', ref: useRef(null), background: 'in-progress' };
-    const box4 = { id: 'post', ref: useRef(null), background: 'failure' };
+    const box1 = {
+        id: 'venue booking', ref: useRef(null),
+        status: data.VenueStatus,
+        background: data.VenueStatus === "completed" ? 'success' : data.VenueStatus === "in-process" ? "in-progress" : data.VenueStatus === "failed" ? "failure" : "waiting"
+    };
+    const box2 = {
+        id: 'logistics arrangement', ref: useRef(null),
+        status: data.LogisticsStatus,
+        background: data.LogisticsStatus === "completed" ? 'success' : data.LogisticsStatus === "in-process" ? "in-progress" : data.LogisticsStatus === "failed" ? "failure" : "grey"
+    };
+    const box3 = {
+        id: 'informing people', ref: useRef(null),
+        status: data.InformingPeople,
+        background: data.InformingPeople === "completed" ? 'success' : data.InformingPeople === "in-process" ? "in-progress" : data.InformingPeople === "failed" ? "failure" : "grey"
+    };
+    const box5 = {
+        id: 'canteen order', ref: useRef(null),
+        status: data.CanteenStatus,
+        background: data.CanteenStatus === "completed" ? 'success' : data.CanteenStatus === "in-process" ? "in-progress" : data.CanteenStatus === "failed" ? "failure" : "grey"
+    };
+    const box4 = {
+        id: 'social media post', ref: useRef(null),
+        status: data.SocialsStatus,
+        background: data.SocialsStatus === "completed" ? 'success' : data.SocialsStatus === "in-process" ? "in-progress" : data.SocialsStatus === "failed" ? "failure" : "grey"
+    };
 
     return (
         <div style={canvasStyle} id="canvas" onScroll={updateXarrow}>

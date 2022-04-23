@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import './Nav.css'
 import { NavLink } from 'react-router-dom'
 
-const Navbar = ({ ind, Menus, id }) => {
+const Navbar = ({ ind, Menus, id, type }) => {
 
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
@@ -21,7 +21,7 @@ const Navbar = ({ ind, Menus, id }) => {
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     {Menus.map((Menu, index) => (
                         <NavLink to={{
-                            pathname: `${Menu.to}/${id}`,
+                            pathname: `${Menu.to}/${id}/${type}`,
                         }} key={index}>
                             <li
                                 key={index}
@@ -29,7 +29,6 @@ const Navbar = ({ ind, Menus, id }) => {
                             >
                                 {Menu.title}
                             </li>
-                            {console.log(Menu.title + " " + id)}
                         </NavLink>
                     ))}
                 </ul>

@@ -28,7 +28,7 @@ function FDP() {
                 <div className="flex flex-wrap -m-4">
                     {
                         arr.map(data => {
-                            return <Card to={`/admin/fdp/report/:${data.id}`} title={data.name} />
+                            return <Card to={`/admin/fdp/report/:${data.id}/:fdp`} title={data.name} />
                         })
                     }
                 </div>

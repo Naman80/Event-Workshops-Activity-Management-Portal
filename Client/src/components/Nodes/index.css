@@ -9,3 +9,7 @@
 .failure {
   background-color: red;
 }
+
+.waiting {
+  background-color: antiquewhite;
+}
