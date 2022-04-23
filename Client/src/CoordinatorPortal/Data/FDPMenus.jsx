@@ -1,7 +1,7 @@
 const FDPMenus = [
     { title: "Report", to: "/coordinator/fdp/report" },
     { title: "Status", to: "/coordinator/fdp/status" },
-    { title: "Applications", to: "/coordinator/fdp/applications" },
+    { title: "My Tasks", to: "/coordinator/fdp/myTask" },
 ];
 
 export default FDPMenus;

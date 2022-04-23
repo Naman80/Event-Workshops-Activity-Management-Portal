@@ -21,6 +21,10 @@ import TStatus from "./ReportCards/TalkCards/pages/TStatus";
 import WeApplications from "./ReportCards/WebinarCards/pages/WeApplications";
 import WeReport from "./ReportCards/WebinarCards/pages/WeReport";
 import WeStatus from "./ReportCards/WebinarCards/pages/WeStatus";
+import WorkshopEvent from '../components/Forms/Types/WorkshopEvent';
+import WebinarEvent from '../components/Forms/Types/WebinarEvent';
+import FDPEvent from '../components/Forms/Types/FDPEvent';
+import TalksEvent from '../components/Forms/Types/TalksEvent';
 
 
 
@@ -34,17 +38,22 @@ export default [
         <Route path="webinar" element={<Webinar />} />
         <Route path="workshops" element={<Workshops />} />
         <Route path="logout" element={<LogOut />} />
-        <Route path="workshop/report" element={<Report />} />
-        <Route path="workshop/status" element={<Status />} />
-        <Route path="workshop/applications" element={<Applications />} />
-        <Route path="webinar/report" element={<WeReport />} />
-        <Route path="webinar/status" element={<WeStatus />} />
-        <Route path="webinar/applications" element={<WeApplications />} />
-        <Route path="talks/report" element={<TReport />} />
-        <Route path="talks/status" element={<TStatus />} />
-        <Route path="talks/applications" element={<TApplications />} />
-        <Route path="fdp/report" element={<FReport />} />
-        <Route path="fdp/status" element={<FStatus />} />
-        <Route path="fdp/applications" element={<FApplications />} />
+        <Route path="workshop/report/:eventId" element={<Report />} />
+        <Route path="workshop/status/:eventId" element={<Status />} />
+        <Route path="workshop/applications/:eventId" element={<Applications />} />
+        <Route path="webinar/report/:eventId" element={<WeReport />} />
+        <Route path="webinar/status/:eventId" element={<WeStatus />} />
+        <Route path="webinar/applications/:eventId" element={<WeApplications />} />
+        <Route path="talks/report/:eventId" element={<TReport />} />
+        <Route path="talks/status/:eventId" element={<TStatus />} />
+        <Route path="talks/applications/:eventId" element={<TApplications />} />
+        <Route path="fdp/report/:eventId" element={<FReport />} />
+        <Route path="fdp/status/:eventId" element={<FStatus />} />
+        <Route path="fdp/applications/:eventId" element={<FApplications />} />
+        <Route path="create/webinar" element={<WebinarEvent />} />
+        <Route path="create/fdp" element={<FDPEvent />} />
+        <Route path="create/workshop" element={<WorkshopEvent />} />
+        <Route path="create/talks" element={<TalksEvent />} />
+
     </Route>
 ]

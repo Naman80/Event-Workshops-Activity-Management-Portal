@@ -1,0 +1,53 @@
+.request {
+  margin: 10px;
+  display: flex;
+  width: 80%;
+  border: 1px solid rgb(7, 184, 139);
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.req-icons {
+  margin-right: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon > .MuiSvgIcon-root {
+  cursor: pointer;
+  margin: 10px;
+}
+.icon > .MuiSvgIcon-root:hover {
+  color: aqua;
+}
+
+.Names {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.name {
+  margin-left: 20px;
+}
+
+.requests {
+  background-color: rgb(249 243 243);
+  overflow: hidden;
+  padding: 1rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.full {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.reqs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+}

@@ -5,8 +5,7 @@ const Menus = [
     { title: "Talks", src: "Calendar", to: "/admin/talks" },
     { title: "FDP", src: "Search", to: "/admin/fdp" },
     { title: "Webinar", src: "Chart", to: "/admin/webinar" },
-    { title: "Profile", src: "Folder", gap: true, to: "/admin/profile" },
-    { title: "Log Out", src: "Setting", to: "/admin/logout" },
+    { title: "Log Out", src: "Setting", to: "/admin/logout", gap: true },
 ];
 
 export default Menus;

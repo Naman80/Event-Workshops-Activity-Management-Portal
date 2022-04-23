@@ -11,14 +11,14 @@ const SideBar = () => {
                     } bg-dark-purple h-screen p-5  pt-8 relative duration-300`}
             >
                 <img
-                    src="../src/assets/control.png"
+                    src="../../src/assets/control.png"
                     className={`absolute cursor-pointer -right-3 top-9 w-7 border-dark-purple
            border-2 rounded-full  ${!open && "rotate-180"}`}
                     onClick={() => setOpen(!open)}
                 />
                 <div className="flex gap-x-4 items-center">
                     <img
-                        src="../src/assets/logo.png"
+                        src="../../src/assets/logo.png"
                         className={`cursor-pointer duration-500 ${open && "rotate-[360deg]"
                             }`}
                     />
@@ -26,7 +26,7 @@ const SideBar = () => {
                         className={`text-white origin-left font-medium text-xl duration-200 ${!open && "scale-0"
                             }`}
                     >
-                        Designer
+                        Admin
                     </h1>
                 </div>
                 <ul className="pt-6">
@@ -38,7 +38,7 @@ const SideBar = () => {
               ${Menu.gap ? "mt-9" : "mt-2"} 
                `}
                             >
-                                <img src={`../src/assets/${Menu.src}.png`} />
+                                <img src={`../../src/assets/${Menu.src}.png`} />
                                 <span className={`${!open && "hidden"} origin-left duration-200`}>
                                     {Menu.title}
                                 </span>
@@ -47,7 +47,7 @@ const SideBar = () => {
                     ))}
                 </ul>
             </div>
-            <div className="h-screen flex-1 p-7">
+            <div className="h-screen flex-1 p-7 overflow-scroll">
                 <Outlet />
             </div>
         </div>

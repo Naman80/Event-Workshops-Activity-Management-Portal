@@ -1,0 +1,11 @@
+.success {
+  background-color: rgb(29, 212, 29);
+}
+
+.in-progress {
+  background-color: rgb(218, 168, 75);
+}
+
+.failure {
+  background-color: red;
+}

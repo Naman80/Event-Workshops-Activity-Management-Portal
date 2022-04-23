@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import './Nav.css'
-import { BrowserRouter as Router, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
-const Navbar = ({ ind, Menus }) => {
+const Navbar = ({ ind, Menus, id }) => {
 
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
@@ -20,13 +20,16 @@ const Navbar = ({ ind, Menus }) => {
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     {Menus.map((Menu, index) => (
-                        <NavLink to={Menu.to} key={index}>
+                        <NavLink to={{
+                            pathname: `${Menu.to}/${id}`,
+                        }} key={index}>
                             <li
                                 key={index}
                                 className={`nav-item ${ind == index ? "nav-under" : ""}`}
                             >
                                 {Menu.title}
                             </li>
+                            {console.log(Menu.title + " " + id)}
                         </NavLink>
                     ))}
                 </ul>

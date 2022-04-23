@@ -1,7 +1,7 @@
 const WorkshopMenus = [
     { title: "Report", to: "/coordinator/workshop/report" },
     { title: "Status", to: "/coordinator/workshop/status" },
-    { title: "Applications", to: "/coordinator/workshop/applications" },
+    { title: "MyTasks", to: "/coordinator/workshop/myTask" },
 ];
 
 export default WorkshopMenus;

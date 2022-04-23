@@ -1,8 +1,9 @@
 import React from 'react'
+import Forms from "../../components/Forms"
 
 function CreateEvent() {
     return (
-        <div>Inbox</div>
+        <Forms />
     )
 }
 
