@@ -4,6 +4,7 @@ import AdminPortal from './AdminPortal';
 import CoordinatorPortal from './CoordinatorPortal';
 import MainPage from './MainPage/MainPage';
 import ParticipantPortal from './ParticipantPortal';
+import Events from './MainPage/ComponentsMain/Body/CompBody/BranchEvents/Events';
 
 function Routess() {
     return (
@@ -13,6 +14,7 @@ function Routess() {
                 {AdminPortal}
                 {CoordinatorPortal}
                 {ParticipantPortal}
+                <Route path = "/CSE" element = {<Events name = {'CSE'} ></Events>}></Route>
             </Routes>
         </Router>
     )
