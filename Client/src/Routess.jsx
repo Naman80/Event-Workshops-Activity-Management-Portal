@@ -14,7 +14,14 @@ function Routess() {
                 {AdminPortal}
                 {CoordinatorPortal}
                 {ParticipantPortal}
-                <Route path = "/CSE" element = {<Events name = {'CSE'} ></Events>}></Route>
+                <Route path = "/CSE" element = {<Events name = "CSE" ></Events>}></Route>
+                 <Route path = "/IT" element = {<Events name = "IT" ></Events>}></Route>
+                  <Route path = "/ECE" element = {<Events name = "ECE" ></Events>}></Route>
+                   <Route path = "/EEE" element = {<Events name = "EEE" ></Events>}></Route>
+                    <Route path = "/MAE" element = {<Events name = "MAE" ></Events>}></Route>
+                     <Route path = "/ME" element = {<Events name = "ME" ></Events>}></Route>
+                      {/* <Route path = "/AI" element = {<Events name = "AI/ML" ></Events>}></Route>
+                       <Route path = "/AI/DS" element = {<Events name = "AI/DS" ></Events>}></Route> */}
             </Routes>
         </Router>
     )
