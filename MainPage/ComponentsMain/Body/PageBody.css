@@ -1,0 +1,28 @@
+/* *{
+    margin: 0px;
+    padding: 0pc;
+} */
+.mainBody{
+    /* width: 100%; */
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    background-color: #efefef;
+
+}
+.leftDiv {
+    flex: 2.5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    /* margin: 20px; */
+}
+.rightDiv{
+    /* margin: 20px; */
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
