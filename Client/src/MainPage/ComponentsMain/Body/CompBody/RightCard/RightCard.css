@@ -1,0 +1,26 @@
+.cardBox{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    /* text-overflow: clip; */
+}
+
+.upCard{
+background-color: #00447c;
+height: 50%;
+padding-top: 10px;
+padding-left: 9px;
+color: white;
+font-size:larger;
+}
+
+.downCard{
+padding-top: 10px;
+padding-left: 9px;
+height: 50%;
+font-size: small;
+background-color: white;
+}
